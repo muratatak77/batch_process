@@ -14,7 +14,9 @@ application up and running.
 	You can download postman json structure
 	
 	[Assessment.postman_collection.json.zip](https://github.com/muratatak77/batch_process/files/6179233/Assessment.postman_collection.json.zip)
-
+	OR you can use to import to the Postman:
+		https://www.getpostman.com/collections/bbdbfc0dd81fa1b57a4f
+		
 	to complete you follow these order:
 	
 	1 - POST CREATE - Campaigns - local - http://127.0.0.1:3000/campaigns
