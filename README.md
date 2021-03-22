@@ -27,6 +27,11 @@ application up and running.
 * Database creation
 	 - postgresql
 
+* How to run development
+
+	You can download postman json structure
+	
+
 * How to run the test suite
 	
 	- I used rspec gem. 
@@ -34,7 +39,8 @@ application up and running.
 	- And we can go to the application path and we can run by from the console: 		
 		
 		 rspec spec/requests/campaigns_spec.rb
-
+		
+		 	
 	- Result 
 	
 			[
