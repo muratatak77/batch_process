@@ -8,7 +8,21 @@ application up and running.
 - You can run with this rspec code from the console :
 
 		rspec spec/requests/campaigns_spec.rb
+		
+- How to run development
 
+	You can download postman json structure
+	
+	[Assessment.postman_collection.json.zip](https://github.com/muratatak77/batch_process/files/6179233/Assessment.postman_collection.json.zip)
+
+	to complete you follow these order:
+	
+	1 - POST CREATE - Campaigns - local - http://127.0.0.1:3000/campaigns
+	
+	2 - POST CREATE - Campaigns Quotas - local - http://127.0.0.1:3000/campaign_quotas
+	
+	3 - GET - ordered_campaigns - http://127.0.0.1:3000/ordered_campaigns
+	
 
 # Things you may want to cover:
 
@@ -27,20 +41,7 @@ application up and running.
 * Database creation
 	 - postgresql
 
-* How to run development
 
-	You can download postman json structure
-	
-	[Assessment.postman_collection.json.zip](https://github.com/muratatak77/batch_process/files/6179233/Assessment.postman_collection.json.zip)
-
-	to complete you follow these order:
-	
-	1 - POST CREATE - Campaigns - local - http://127.0.0.1:3000/campaigns
-	
-	2 - POST CREATE - Campaigns Quotas - local - http://127.0.0.1:3000/campaign_quotas
-	
-	3 - GET - ordered_campaigns - http://127.0.0.1:3000/ordered_campaigns
-	
 
 * How to run the test suite
 	
