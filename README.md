@@ -33,7 +33,7 @@ application up and running.
 	
 	[Assessment.postman_collection.json.zip](https://github.com/muratatak77/batch_process/files/6179233/Assessment.postman_collection.json.zip)
 
-	you can complete :
+	to complete you follow these order:
 	
 	1 - POST CREATE - Campaigns - local - http://127.0.0.1:3000/campaigns
 	
