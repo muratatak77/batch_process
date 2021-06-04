@@ -17,7 +17,7 @@ class RestUtil < LogHandle
       return nil
     end
 
-    private 
+    private
 
     def get_data(response)
       json_parse(response)

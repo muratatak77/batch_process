@@ -6,5 +6,5 @@ class CampaignQuotasController < ApplicationController
       render json: {data: "FAIL", status: :unprocessable_entity}
     end
   end
- 
+
 end

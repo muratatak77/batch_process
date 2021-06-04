@@ -11,7 +11,7 @@ class CampaignsController < ApplicationController
       render json: {data: "FAIL", status: :unprocessable_entity}
     end
   end
- 
+
   # GET ordered_campaigns
   def ordered_campaigns
     result = CampaignDao.run()
@@ -20,5 +20,5 @@ class CampaignsController < ApplicationController
     puts ">>>>>>>>>    Expected JSON <<<<<<<<<<<< "
     render json: {data: result, status: :created}
   end
-  
+
 end

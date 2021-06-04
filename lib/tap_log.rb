@@ -4,7 +4,7 @@ class TapLog
   LOGGER2 ||= ActiveSupport::TaggedLogging.new(ActiveSupport::Logger.new(STDOUT))
 
   class  << self
-    
+
     def info(message, options={})
       log = common_info(message, options)
       log_res = {

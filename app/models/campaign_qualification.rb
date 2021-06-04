@@ -1,12 +1,12 @@
-class CampaignQualification < ApplicationRecord 
+class CampaignQualification < ApplicationRecord
 
   belongs_to :campaign_quota, optional: false
   validates_presence_of :question_id, :pre_codes
-	
-	# I got some "ActiveRecord::StatementInvalid (Could not find table)" error, that's why I added.
-	self.table_name = 'campaign_qualifications'
 
-  scope :order_qualification , -> { 
+  # I got some "ActiveRecord::StatementInvalid (Could not find table)" error, that's why I added.
+  self.table_name = 'campaign_qualifications'
+
+  scope :order_qualification , -> {
     select("
       campaign_qualifications.campaign_quota_id as campaign_quota_id, 
       count(campaign_qualifications.id) as qualification_count 
@@ -16,17 +16,17 @@ class CampaignQualification < ApplicationRecord
     .order("qualification_count DESC")
   }
 
-	class << self
+  class << self
 
     def get_qualifications(qualifications)
       init(qualifications)
       _prepared_by_hash
     end
 
-		private
+    private
 
     def init(qualifications)
-      @qualifications = qualifications  
+      @qualifications = qualifications
     end
 
     def _prepared_by_hash
@@ -40,6 +40,6 @@ class CampaignQualification < ApplicationRecord
       result
     end
 
-	end
+  end
 
 end
